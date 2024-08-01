@@ -5,7 +5,7 @@ import androidx.compose.ui.text.AnnotatedString
 import arabicLetters.arabicNormalLetters
 import chakl.Chakl
 import tajweed.abstraction.TajweedRule
-import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
+import utils.annotatedString.buildQuranTajweedAnnotatedString
 
 class MeemSakinahIdhhar(
     override val color: Color = Color.Magenta,
@@ -23,7 +23,7 @@ class MeemSakinahIdhhar(
 ) : TajweedRule {
     override fun highlightQuranText(quranText: AnnotatedString): AnnotatedString {
         val quranAnnotatedStringWithMeemSakinahIdhhar =
-            buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters(
+            buildQuranTajweedAnnotatedString(
                 quranText = quranText,
                 characterVariation = characterVariation,
                 followingNormalCharacters = followingNormalCharacters,

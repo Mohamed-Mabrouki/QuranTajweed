@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import chakl.Chakl
 import tajweed.abstraction.TajweedRule
-import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChakl
+import utils.annotatedString.buildQuranTajweedAnnotatedString
 
 class Qalqalah(
     override val color: Color = Color.Blue,
@@ -15,7 +15,7 @@ class Qalqalah(
 ) : TajweedRule {
     override fun highlightQuranText(quranText: AnnotatedString): AnnotatedString {
         val quranAnnotatedStringWithQalqalah =
-            buildQuranTajweedAnnotatedStringBasedOnChakl(
+            buildQuranTajweedAnnotatedString(
                 quranText,
                 characterVariation = characterVariation,
                 followingChaklCharacters = followingChaklCharacters,

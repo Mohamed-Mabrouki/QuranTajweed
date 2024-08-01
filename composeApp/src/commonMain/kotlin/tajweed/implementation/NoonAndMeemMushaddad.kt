@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import chakl.Chakl
 import tajweed.abstraction.TajweedRule
-import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChakl
+import utils.annotatedString.buildQuranTajweedAnnotatedString
 
 class NoonAndMeemMushaddad(
     override val color: Color = Color.Red,
@@ -14,8 +14,16 @@ class NoonAndMeemMushaddad(
     override val numberOfCharactersToColor: Int = 1,
 ) : TajweedRule {
     override fun highlightQuranText(quranText: AnnotatedString): AnnotatedString {
+//        val quranAnnotatedStringWithNoonAndMeemMushaddad =
+//            buildQuranTajweedAnnotatedStringBasedOnChakl(
+//                quranText,
+//                characterVariation = characterVariation,
+//                followingChaklCharacters = followingChaklCharacters,
+//                numberOfCharactersToColor = numberOfCharactersToColor,
+//                color = color,
+//            )
         val quranAnnotatedStringWithNoonAndMeemMushaddad =
-            buildQuranTajweedAnnotatedStringBasedOnChakl(
+            buildQuranTajweedAnnotatedString(
                 quranText,
                 characterVariation = characterVariation,
                 followingChaklCharacters = followingChaklCharacters,
