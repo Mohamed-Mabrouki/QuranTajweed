@@ -77,7 +77,6 @@ fun buildQuranTajweedAnnotatedString(
                         }
                     }
                 }
-
             println("time taken to calculate: $time")
         }
     return annotatedString
