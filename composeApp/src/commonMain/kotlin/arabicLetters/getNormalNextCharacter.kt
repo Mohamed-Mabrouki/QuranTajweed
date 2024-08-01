@@ -6,16 +6,12 @@ package arabicLetters
  * example: getNextNormalCharacter("سلام عليكم=ç") returns 'س'
  */
 fun getNextNormalCharacter(arabicText: String): Char? {
-    try {
-        if (arabicText.isNotEmpty()) {
-            arabicText.forEach {
-                if (it in arabicNormalLetters) {
-                    return it
-                }
+    if (arabicText.isNotEmpty()) {
+        arabicText.forEach {
+            if (it in arabicNormalLetters) {
+                return it
             }
         }
-        return null
-    } catch (e: Exception) {
-        return "".first()
     }
+    return null
 }

@@ -15,7 +15,16 @@ import kotlin.time.measureTime
  * followingChaklCharacters and followingNormalCharacters lists.
  * it's used for all the tajweedRules  whether they depends only on chakl or normal characters or even
  * both of them at the same time.
- *
+ * @param quranText
+ * the text that we want to highlight some of its characters.
+ * @param characterVariation
+ * the list of characters that we might highlight if the tajweed rule conditions are met
+ * @param followingChaklCharacters
+ * the list of chakl characters that should be after the character in the characterVariation list
+ *@param followingNormalCharacters
+ * the list of arabic normal characters that should be after the character in the characterVariation list
+ * @param numberOfCharactersToColor
+ * the number of characters that we want to highlight starting from the character in the characterVariation list
  */
 
 fun buildQuranTajweedAnnotatedString(

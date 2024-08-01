@@ -13,4 +13,3 @@ fun isNextNormalCharacterValid(
     followingNormalCharacters: List<Char>,
 ) = nextNormalCharacter in arabicNormalLetters &&
     nextNormalCharacter in followingNormalCharacters
-//    followingNormalCharacters.contains(nextNormalCharacter)

@@ -14,14 +14,6 @@ class NoonAndMeemMushaddad(
     override val numberOfCharactersToColor: Int = 1,
 ) : TajweedRule {
     override fun highlightQuranText(quranText: AnnotatedString): AnnotatedString {
-//        val quranAnnotatedStringWithNoonAndMeemMushaddad =
-//            buildQuranTajweedAnnotatedStringBasedOnChakl(
-//                quranText,
-//                characterVariation = characterVariation,
-//                followingChaklCharacters = followingChaklCharacters,
-//                numberOfCharactersToColor = numberOfCharactersToColor,
-//                color = color,
-//            )
         val quranAnnotatedStringWithNoonAndMeemMushaddad =
             buildQuranTajweedAnnotatedString(
                 quranText,
