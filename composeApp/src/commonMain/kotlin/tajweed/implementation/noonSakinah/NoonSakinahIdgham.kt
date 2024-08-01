@@ -1,4 +1,4 @@
-package tajweed.implementation.meemSakinhah
+package tajweed.implementation.noonSakinah
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
@@ -6,10 +6,10 @@ import chakl.Chakl
 import tajweed.abstraction.TajweedRule
 import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
 
-class MeemSakinahIdgham(
-    override val color: Color = Color.Green,
-    override val characterVariation: List<Char> = listOf('م'),
-    override val followingNormalCharacters: List<Char> = listOf('م'),
+class NoonSakinahIdgham(
+    override val color: Color = Color.Yellow,
+    override val characterVariation: List<Char> = listOf('ن'),
+    override val followingNormalCharacters: List<Char> = listOf('ن', 'و', 'ر', 'ل', 'م', 'ي'),
     override val followingChaklCharacters: List<Char> =
         listOf(
             Chakl.SUKUN.value,
@@ -18,7 +18,7 @@ class MeemSakinahIdgham(
     override val numberOfCharactersToColor: Int = 1,
 ) : TajweedRule {
     override fun highlightQuranText(quranText: AnnotatedString): AnnotatedString {
-        val quranAnnotatedStringWithMeemSakinahIdgham =
+        val quranAnnotatedStringWithNoonSakinahIdgham =
             buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters(
                 quranText = quranText,
                 characterVariation = characterVariation,
@@ -28,6 +28,6 @@ class MeemSakinahIdgham(
                 color = color,
             )
 
-        return quranAnnotatedStringWithMeemSakinahIdgham
+        return quranAnnotatedStringWithNoonSakinahIdgham
     }
 }

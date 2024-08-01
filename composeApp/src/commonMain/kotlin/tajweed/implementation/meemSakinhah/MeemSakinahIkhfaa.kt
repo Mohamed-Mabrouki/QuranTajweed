@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import chakl.Chakl
 import tajweed.abstraction.TajweedRule
-import tajweed.utils.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
+import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
 
 class MeemSakinahIkhfaa(
     override val color: Color = Color.Gray,

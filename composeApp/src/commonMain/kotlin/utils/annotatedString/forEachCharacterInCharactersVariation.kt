@@ -1,4 +1,4 @@
-package tajweed.utils
+package utils.annotatedString
 
 import androidx.compose.ui.text.AnnotatedString
 

@@ -5,7 +5,7 @@ import androidx.compose.ui.text.AnnotatedString
 import arabicLetters.arabicNormalLetters
 import chakl.Chakl
 import tajweed.abstraction.TajweedRule
-import tajweed.utils.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
+import utils.annotatedString.buildQuranTajweedAnnotatedStringBasedOnChaklAndNormalCharacters
 
 class MeemSakinahIdhhar(
     override val color: Color = Color.Magenta,
